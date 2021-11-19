@@ -2,7 +2,7 @@
 Assignemnt on Rest API testing
 
 
-# Author : Vikas Kumar
+# Author : Rupam Chatterjee
 # Project Overview
 # Link to Detail Test Documentation
 # Link to Payconiq API Automation Doc
