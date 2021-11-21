@@ -1,0 +1,3085 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 1965233900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CommonSteps.beforeEveryScenario(Scenario)"
+            }
+          }
+        ],
+        "line": 23,
+        "name": "1)Creates a new booking in the API",
+        "description": "",
+        "id": "creating-a-booking-and-fetch-all-the-ids-followed-by-partial-update-and-delete;1)creates-a-new-booking-in-the-api;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 777100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CommonSteps.afterEveryScenario(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 4694728100,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Testing environment",
+            "match": {
+              "location": "CommonSteps.getBaseURI()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 476406500,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I pass headers",
+            "match": {
+              "location": "CommonSteps.setHeaders(String,String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Content-Type",
+                  "application/json"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 106896400,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I pass body as \"PostCreateBooking\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "PostCreateBooking",
+                  "offset": 16
+                }
+              ],
+              "location": "CommonSteps.setBody(String,String,String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "firstname",
+                  "Ramu"
+                ]
+              },
+              {
+                "cells": [
+                  "lastname",
+                  "Mohan"
+                ]
+              },
+              {
+                "cells": [
+                  "totalprice",
+                  "123"
+                ]
+              },
+              {
+                "cells": [
+                  "depositpaid",
+                  "true"
+                ]
+              },
+              {
+                "cells": [
+                  "checkin",
+                  "2018-05-01"
+                ]
+              },
+              {
+                "cells": [
+                  "checkout",
+                  "2020-11-01"
+                ]
+              },
+              {
+                "cells": [
+                  "additionalneeds",
+                  "CotExtra"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4842798700,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I perform POST operation \"PostCreateBooking\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "PostCreateBooking",
+                  "offset": 26
+                }
+              ],
+              "location": "CommonSteps.invokePOSTOperation(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 96065800,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I should get response \"200\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 23
+                }
+              ],
+              "location": "CommonSteps.verifyHTTPStatusCode(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3996800,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "response Body contains",
+            "match": {
+              "location": "CommonSteps.verifyResponseBodyValues(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "bookingid"
+                ]
+              }
+            ],
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@RegressionTest"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 1304200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CommonSteps.beforeEveryScenario(Scenario)"
+            }
+          }
+        ],
+        "line": 24,
+        "name": "1)Creates a new booking in the API",
+        "description": "",
+        "id": "creating-a-booking-and-fetch-all-the-ids-followed-by-partial-update-and-delete;1)creates-a-new-booking-in-the-api;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 1488200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CommonSteps.afterEveryScenario(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 845500,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Testing environment",
+            "match": {
+              "location": "CommonSteps.getBaseURI()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1831900,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I pass headers",
+            "match": {
+              "location": "CommonSteps.setHeaders(String,String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Content-Type",
+                  "application/json"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1291900,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I pass body as \"PostCreateBooking\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "PostCreateBooking",
+                  "offset": 16
+                }
+              ],
+              "location": "CommonSteps.setBody(String,String,String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "firstname",
+                  "Batner"
+                ]
+              },
+              {
+                "cells": [
+                  "lastname",
+                  "Anguly"
+                ]
+              },
+              {
+                "cells": [
+                  "totalprice",
+                  "123"
+                ]
+              },
+              {
+                "cells": [
+                  "depositpaid",
+                  "true"
+                ]
+              },
+              {
+                "cells": [
+                  "checkin",
+                  "2019-04-21"
+                ]
+              },
+              {
+                "cells": [
+                  "checkout",
+                  "2021-07-21"
+                ]
+              },
+              {
+                "cells": [
+                  "additionalneeds",
+                  "ExtraPillow"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1208136300,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I perform POST operation \"PostCreateBooking\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "PostCreateBooking",
+                  "offset": 26
+                }
+              ],
+              "location": "CommonSteps.invokePOSTOperation(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3817700,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I should get response \"200\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 23
+                }
+              ],
+              "location": "CommonSteps.verifyHTTPStatusCode(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2261500,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "response Body contains",
+            "match": {
+              "location": "CommonSteps.verifyResponseBodyValues(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "bookingid"
+                ]
+              }
+            ],
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@RegressionTest"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 2565700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CommonSteps.beforeEveryScenario(Scenario)"
+            }
+          }
+        ],
+        "line": 25,
+        "name": "1)Creates a new booking in the API",
+        "description": "",
+        "id": "creating-a-booking-and-fetch-all-the-ids-followed-by-partial-update-and-delete;1)creates-a-new-booking-in-the-api;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 1111700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CommonSteps.afterEveryScenario(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3812100,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Testing environment",
+            "match": {
+              "location": "CommonSteps.getBaseURI()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3340600,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I pass headers",
+            "match": {
+              "location": "CommonSteps.setHeaders(String,String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Content-Type",
+                  "application/json"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1549700,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I pass body as \"PostCreateBooking\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "PostCreateBooking",
+                  "offset": 16
+                }
+              ],
+              "location": "CommonSteps.setBody(String,String,String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "firstname",
+                  "Rupam"
+                ]
+              },
+              {
+                "cells": [
+                  "lastname",
+                  "CH"
+                ]
+              },
+              {
+                "cells": [
+                  "totalprice",
+                  "123"
+                ]
+              },
+              {
+                "cells": [
+                  "depositpaid",
+                  "true"
+                ]
+              },
+              {
+                "cells": [
+                  "checkin",
+                  "2019-12-01"
+                ]
+              },
+              {
+                "cells": [
+                  "checkout",
+                  "2021-04-01"
+                ]
+              },
+              {
+                "cells": [
+                  "additionalneeds",
+                  "CoffeeMaker"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1219731100,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I perform POST operation \"PostCreateBooking\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "PostCreateBooking",
+                  "offset": 26
+                }
+              ],
+              "location": "CommonSteps.invokePOSTOperation(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1994300,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I should get response \"200\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 23
+                }
+              ],
+              "location": "CommonSteps.verifyHTTPStatusCode(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1628600,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "response Body contains",
+            "match": {
+              "location": "CommonSteps.verifyResponseBodyValues(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "bookingid"
+                ]
+              }
+            ],
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@RegressionTest"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 3375100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CommonSteps.beforeEveryScenario(Scenario)"
+            }
+          }
+        ],
+        "line": 26,
+        "name": "1)Creates a new booking in the API",
+        "description": "",
+        "id": "creating-a-booking-and-fetch-all-the-ids-followed-by-partial-update-and-delete;1)creates-a-new-booking-in-the-api;;5",
+        "after": [
+          {
+            "result": {
+              "duration": 1508900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CommonSteps.afterEveryScenario(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2133900,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Testing environment",
+            "match": {
+              "location": "CommonSteps.getBaseURI()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4207600,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I pass headers",
+            "match": {
+              "location": "CommonSteps.setHeaders(String,String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Content-Type",
+                  "application/json"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2718700,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I pass body as \"PostCreateBooking\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "PostCreateBooking",
+                  "offset": 16
+                }
+              ],
+              "location": "CommonSteps.setBody(String,String,String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "firstname",
+                  "Joan"
+                ]
+              },
+              {
+                "cells": [
+                  "lastname",
+                  "Molly"
+                ]
+              },
+              {
+                "cells": [
+                  "totalprice",
+                  "123"
+                ]
+              },
+              {
+                "cells": [
+                  "depositpaid",
+                  "true"
+                ]
+              },
+              {
+                "cells": [
+                  "checkin",
+                  "2021-01-18"
+                ]
+              },
+              {
+                "cells": [
+                  "checkout",
+                  "2021-09-15"
+                ]
+              },
+              {
+                "cells": [
+                  "additionalneeds",
+                  "Breakfast"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1151446800,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I perform POST operation \"PostCreateBooking\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "PostCreateBooking",
+                  "offset": 26
+                }
+              ],
+              "location": "CommonSteps.invokePOSTOperation(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5267800,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I should get response \"200\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 23
+                }
+              ],
+              "location": "CommonSteps.verifyHTTPStatusCode(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1743200,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "response Body contains",
+            "match": {
+              "location": "CommonSteps.verifyResponseBodyValues(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "bookingid"
+                ]
+              }
+            ],
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@RegressionTest"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 5737100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CommonSteps.beforeEveryScenario(Scenario)"
+            }
+          }
+        ],
+        "line": 27,
+        "name": "1)Creates a new booking in the API",
+        "description": "",
+        "id": "creating-a-booking-and-fetch-all-the-ids-followed-by-partial-update-and-delete;1)creates-a-new-booking-in-the-api;;6",
+        "after": [
+          {
+            "result": {
+              "duration": 482600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CommonSteps.afterEveryScenario(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2903000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Testing environment",
+            "match": {
+              "location": "CommonSteps.getBaseURI()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2428500,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I pass headers",
+            "match": {
+              "location": "CommonSteps.setHeaders(String,String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Content-Type",
+                  "application/json"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1484500,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I pass body as \"PostCreateBooking\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "PostCreateBooking",
+                  "offset": 16
+                }
+              ],
+              "location": "CommonSteps.setBody(String,String,String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "firstname",
+                  "Mike"
+                ]
+              },
+              {
+                "cells": [
+                  "lastname",
+                  "Ben"
+                ]
+              },
+              {
+                "cells": [
+                  "totalprice",
+                  "123"
+                ]
+              },
+              {
+                "cells": [
+                  "depositpaid",
+                  "true"
+                ]
+              },
+              {
+                "cells": [
+                  "checkin",
+                  "2020-11-18"
+                ]
+              },
+              {
+                "cells": [
+                  "checkout",
+                  "2021-09-15"
+                ]
+              },
+              {
+                "cells": [
+                  "additionalneeds",
+                  "Slippers"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1183443700,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I perform POST operation \"PostCreateBooking\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "PostCreateBooking",
+                  "offset": 26
+                }
+              ],
+              "location": "CommonSteps.invokePOSTOperation(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 665900,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I should get response \"200\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 23
+                }
+              ],
+              "location": "CommonSteps.verifyHTTPStatusCode(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 420400,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "response Body contains",
+            "match": {
+              "location": "CommonSteps.verifyResponseBodyValues(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "bookingid"
+                ]
+              }
+            ],
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@RegressionTest"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 1418100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CommonSteps.beforeEveryScenario(Scenario)"
+            }
+          }
+        ],
+        "line": 46,
+        "name": "2)Returns a specific booking based upon the First and Last Name provided",
+        "description": "",
+        "id": "creating-a-booking-and-fetch-all-the-ids-followed-by-partial-update-and-delete;2)returns-a-specific-booking-based-upon-the-first-and-last-name-provided;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 1028300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CommonSteps.afterEveryScenario(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 968600,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "Testing environment",
+            "match": {
+              "location": "CommonSteps.getBaseURI()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1243000,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "I pass headers",
+            "match": {
+              "location": "CommonSteps.setHeaders(String,String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Accept",
+                  "application/json"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 10726700,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "I pass queryParametres",
+            "match": {
+              "location": "CommonSteps.setQueryParam(String,String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "firstname",
+                  "Rupam"
+                ]
+              },
+              {
+                "cells": [
+                  "lastname",
+                  "CH"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1987500300,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "I perform GET operation \"GetBookingId\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "GetBookingId",
+                  "offset": 25
+                }
+              ],
+              "location": "CommonSteps.invokeGETOperation(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1580100,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "I should get response \"200\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 23
+                }
+              ],
+              "location": "CommonSteps.verifyHTTPStatusCode(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 15406100,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "response content Type is json",
+            "match": {
+              "location": "CommonSteps.verifyResponseContentType()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 729900,
+              "status": "passed"
+            },
+            "line": 41,
+            "name": "response Body contains",
+            "match": {
+              "location": "CommonSteps.verifyResponseBodyValues(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "bookingid"
+                ]
+              }
+            ],
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@RegressionTest"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 1575500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CommonSteps.beforeEveryScenario(Scenario)"
+            }
+          }
+        ],
+        "line": 47,
+        "name": "2)Returns a specific booking based upon the First and Last Name provided",
+        "description": "",
+        "id": "creating-a-booking-and-fetch-all-the-ids-followed-by-partial-update-and-delete;2)returns-a-specific-booking-based-upon-the-first-and-last-name-provided;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 1047900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CommonSteps.afterEveryScenario(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1265600,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "Testing environment",
+            "match": {
+              "location": "CommonSteps.getBaseURI()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2201600,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "I pass headers",
+            "match": {
+              "location": "CommonSteps.setHeaders(String,String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Accept",
+                  "application/json"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1169800,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "I pass queryParametres",
+            "match": {
+              "location": "CommonSteps.setQueryParam(String,String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "firstname",
+                  "Ramu"
+                ]
+              },
+              {
+                "cells": [
+                  "lastname",
+                  "Mohan"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1823282000,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "I perform GET operation \"GetBookingId\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "GetBookingId",
+                  "offset": 25
+                }
+              ],
+              "location": "CommonSteps.invokeGETOperation(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2661100,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "I should get response \"200\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 23
+                }
+              ],
+              "location": "CommonSteps.verifyHTTPStatusCode(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 8732800,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "response content Type is json",
+            "match": {
+              "location": "CommonSteps.verifyResponseContentType()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1347300,
+              "status": "passed"
+            },
+            "line": 41,
+            "name": "response Body contains",
+            "match": {
+              "location": "CommonSteps.verifyResponseBodyValues(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "bookingid"
+                ]
+              }
+            ],
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@RegressionTest"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 1947600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CommonSteps.beforeEveryScenario(Scenario)"
+            }
+          }
+        ],
+        "line": 48,
+        "name": "2)Returns a specific booking based upon the First and Last Name provided",
+        "description": "",
+        "id": "creating-a-booking-and-fetch-all-the-ids-followed-by-partial-update-and-delete;2)returns-a-specific-booking-based-upon-the-first-and-last-name-provided;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 521800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CommonSteps.afterEveryScenario(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 852300,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "Testing environment",
+            "match": {
+              "location": "CommonSteps.getBaseURI()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2469400,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "I pass headers",
+            "match": {
+              "location": "CommonSteps.setHeaders(String,String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Accept",
+                  "application/json"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 861000,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "I pass queryParametres",
+            "match": {
+              "location": "CommonSteps.setQueryParam(String,String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "firstname",
+                  "Xavier"
+                ]
+              },
+              {
+                "cells": [
+                  "lastname",
+                  "Evans"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1075737200,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "I perform GET operation \"GetBookingId\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "GetBookingId",
+                  "offset": 25
+                }
+              ],
+              "location": "CommonSteps.invokeGETOperation(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 828000,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "I should get response \"200\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 23
+                }
+              ],
+              "location": "CommonSteps.verifyHTTPStatusCode(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1377700,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "response content Type is json",
+            "match": {
+              "location": "CommonSteps.verifyResponseContentType()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:86)\r\n\tat org.junit.Assert.assertTrue(Assert.java:41)\r\n\tat org.junit.Assert.assertTrue(Assert.java:52)\r\n\tat com.java.stepdefs.CommonSteps.verifyResponseBodyValues(CommonSteps.java:271)\r\n\tat ✽.response Body contains(file:src/test/java/resources/features/End2EndRegression.feature:41)\r\n",
+              "duration": 2923100,
+              "status": "failed"
+            },
+            "line": 41,
+            "name": "response Body contains",
+            "match": {
+              "location": "CommonSteps.verifyResponseBodyValues(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "bookingid"
+                ]
+              }
+            ],
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@RegressionTest"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 2079400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CommonSteps.beforeEveryScenario(Scenario)"
+            }
+          }
+        ],
+        "line": 49,
+        "name": "2)Returns a specific booking based upon the First and Last Name provided",
+        "description": "",
+        "id": "creating-a-booking-and-fetch-all-the-ids-followed-by-partial-update-and-delete;2)returns-a-specific-booking-based-upon-the-first-and-last-name-provided;;5",
+        "after": [
+          {
+            "result": {
+              "duration": 430800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CommonSteps.afterEveryScenario(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1653500,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "Testing environment",
+            "match": {
+              "location": "CommonSteps.getBaseURI()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3696100,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "I pass headers",
+            "match": {
+              "location": "CommonSteps.setHeaders(String,String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Accept",
+                  "application/json"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1757200,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "I pass queryParametres",
+            "match": {
+              "location": "CommonSteps.setQueryParam(String,String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "firstname",
+                  "Jim"
+                ]
+              },
+              {
+                "cells": [
+                  "lastname",
+                  "Jones"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1155544600,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "I perform GET operation \"GetBookingId\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "GetBookingId",
+                  "offset": 25
+                }
+              ],
+              "location": "CommonSteps.invokeGETOperation(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 806500,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "I should get response \"200\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 23
+                }
+              ],
+              "location": "CommonSteps.verifyHTTPStatusCode(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1288900,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "response content Type is json",
+            "match": {
+              "location": "CommonSteps.verifyResponseContentType()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:86)\r\n\tat org.junit.Assert.assertTrue(Assert.java:41)\r\n\tat org.junit.Assert.assertTrue(Assert.java:52)\r\n\tat com.java.stepdefs.CommonSteps.verifyResponseBodyValues(CommonSteps.java:271)\r\n\tat ✽.response Body contains(file:src/test/java/resources/features/End2EndRegression.feature:41)\r\n",
+              "duration": 1060100,
+              "status": "failed"
+            },
+            "line": 41,
+            "name": "response Body contains",
+            "match": {
+              "location": "CommonSteps.verifyResponseBodyValues(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "bookingid"
+                ]
+              }
+            ],
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@RegressionTest"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 1147100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CommonSteps.beforeEveryScenario(Scenario)"
+            }
+          }
+        ],
+        "line": 66,
+        "name": "3)Returns a specific booking based upon time provided",
+        "description": "",
+        "id": "creating-a-booking-and-fetch-all-the-ids-followed-by-partial-update-and-delete;3)returns-a-specific-booking-based-upon-time-provided;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 1100100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CommonSteps.afterEveryScenario(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 979700,
+              "status": "passed"
+            },
+            "line": 52,
+            "name": "Testing environment",
+            "match": {
+              "location": "CommonSteps.getBaseURI()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1924500,
+              "status": "passed"
+            },
+            "line": 53,
+            "name": "I pass headers",
+            "match": {
+              "location": "CommonSteps.setHeaders(String,String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Accept",
+                  "application/json"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 840000,
+              "status": "passed"
+            },
+            "line": 55,
+            "name": "I pass queryParametres",
+            "match": {
+              "location": "CommonSteps.setQueryParam(String,String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "checkin",
+                  "2018-11-01"
+                ]
+              },
+              {
+                "cells": [
+                  "checkout",
+                  "2021-09-25"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1153434000,
+              "status": "passed"
+            },
+            "line": 58,
+            "name": "I perform GET operation \"GetBookingId\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "GetBookingId",
+                  "offset": 25
+                }
+              ],
+              "location": "CommonSteps.invokeGETOperation(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1404000,
+              "status": "passed"
+            },
+            "line": 59,
+            "name": "I should get response \"200\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 23
+                }
+              ],
+              "location": "CommonSteps.verifyHTTPStatusCode(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1887800,
+              "status": "passed"
+            },
+            "line": 60,
+            "name": "response content Type is json",
+            "match": {
+              "location": "CommonSteps.verifyResponseContentType()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1026500,
+              "status": "passed"
+            },
+            "line": 61,
+            "name": "response Body contains",
+            "match": {
+              "location": "CommonSteps.verifyResponseBodyValues(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "bookingid"
+                ]
+              }
+            ],
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@RegressionTest"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 1946800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CommonSteps.beforeEveryScenario(Scenario)"
+            }
+          }
+        ],
+        "line": 67,
+        "name": "3)Returns a specific booking based upon time provided",
+        "description": "",
+        "id": "creating-a-booking-and-fetch-all-the-ids-followed-by-partial-update-and-delete;3)returns-a-specific-booking-based-upon-time-provided;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 460000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CommonSteps.afterEveryScenario(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1066200,
+              "status": "passed"
+            },
+            "line": 52,
+            "name": "Testing environment",
+            "match": {
+              "location": "CommonSteps.getBaseURI()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4294200,
+              "status": "passed"
+            },
+            "line": 53,
+            "name": "I pass headers",
+            "match": {
+              "location": "CommonSteps.setHeaders(String,String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Accept",
+                  "application/json"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1540600,
+              "status": "passed"
+            },
+            "line": 55,
+            "name": "I pass queryParametres",
+            "match": {
+              "location": "CommonSteps.setQueryParam(String,String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "checkin",
+                  "2016-12-28"
+                ]
+              },
+              {
+                "cells": [
+                  "checkout",
+                  "2019-10-28"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1155556100,
+              "status": "passed"
+            },
+            "line": 58,
+            "name": "I perform GET operation \"GetBookingId\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "GetBookingId",
+                  "offset": 25
+                }
+              ],
+              "location": "CommonSteps.invokeGETOperation(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 14115200,
+              "status": "passed"
+            },
+            "line": 59,
+            "name": "I should get response \"200\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 23
+                }
+              ],
+              "location": "CommonSteps.verifyHTTPStatusCode(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1654800,
+              "status": "passed"
+            },
+            "line": 60,
+            "name": "response content Type is json",
+            "match": {
+              "location": "CommonSteps.verifyResponseContentType()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 879000,
+              "status": "passed"
+            },
+            "line": 61,
+            "name": "response Body contains",
+            "match": {
+              "location": "CommonSteps.verifyResponseBodyValues(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "bookingid"
+                ]
+              }
+            ],
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@RegressionTest"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 1220700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CommonSteps.beforeEveryScenario(Scenario)"
+            }
+          }
+        ],
+        "line": 68,
+        "name": "3)Returns a specific booking based upon time provided",
+        "description": "",
+        "id": "creating-a-booking-and-fetch-all-the-ids-followed-by-partial-update-and-delete;3)returns-a-specific-booking-based-upon-time-provided;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 843600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CommonSteps.afterEveryScenario(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 818900,
+              "status": "passed"
+            },
+            "line": 52,
+            "name": "Testing environment",
+            "match": {
+              "location": "CommonSteps.getBaseURI()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1394500,
+              "status": "passed"
+            },
+            "line": 53,
+            "name": "I pass headers",
+            "match": {
+              "location": "CommonSteps.setHeaders(String,String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Accept",
+                  "application/json"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 741100,
+              "status": "passed"
+            },
+            "line": 55,
+            "name": "I pass queryParametres",
+            "match": {
+              "location": "CommonSteps.setQueryParam(String,String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "checkin",
+                  "2021-02-27"
+                ]
+              },
+              {
+                "cells": [
+                  "checkout",
+                  "2021-07-29"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1197658000,
+              "status": "passed"
+            },
+            "line": 58,
+            "name": "I perform GET operation \"GetBookingId\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "GetBookingId",
+                  "offset": 25
+                }
+              ],
+              "location": "CommonSteps.invokeGETOperation(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1571000,
+              "status": "passed"
+            },
+            "line": 59,
+            "name": "I should get response \"200\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 23
+                }
+              ],
+              "location": "CommonSteps.verifyHTTPStatusCode(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2323800,
+              "status": "passed"
+            },
+            "line": 60,
+            "name": "response content Type is json",
+            "match": {
+              "location": "CommonSteps.verifyResponseContentType()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:86)\r\n\tat org.junit.Assert.assertTrue(Assert.java:41)\r\n\tat org.junit.Assert.assertTrue(Assert.java:52)\r\n\tat com.java.stepdefs.CommonSteps.verifyResponseBodyValues(CommonSteps.java:271)\r\n\tat ✽.response Body contains(file:src/test/java/resources/features/End2EndRegression.feature:61)\r\n",
+              "duration": 2714500,
+              "status": "failed"
+            },
+            "line": 61,
+            "name": "response Body contains",
+            "match": {
+              "location": "CommonSteps.verifyResponseBodyValues(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "bookingid"
+                ]
+              }
+            ],
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@RegressionTest"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 1949200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CommonSteps.beforeEveryScenario(Scenario)"
+            }
+          }
+        ],
+        "line": 90,
+        "name": "4) Update Partial booking in the API",
+        "description": "",
+        "id": "creating-a-booking-and-fetch-all-the-ids-followed-by-partial-update-and-delete;4)-update-partial-booking-in-the-api;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 620100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CommonSteps.afterEveryScenario(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1194100,
+              "status": "passed"
+            },
+            "line": 73,
+            "name": "Testing environment",
+            "match": {
+              "location": "CommonSteps.getBaseURI()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4377800,
+              "status": "passed"
+            },
+            "line": 74,
+            "name": "I pass headers",
+            "match": {
+              "location": "CommonSteps.setHeaders(String,String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Content-Type",
+                  "application/json"
+                ]
+              },
+              {
+                "cells": [
+                  "Accept",
+                  "application/json"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1214200,
+              "status": "passed"
+            },
+            "line": 77,
+            "name": "I pass PathParametres",
+            "match": {
+              "location": "CommonSteps.setPathParam(String,String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "bookingId",
+                  "8"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7962588600,
+              "status": "passed"
+            },
+            "line": 79,
+            "name": "I set Authorisation token",
+            "match": {
+              "location": "CommonSteps.setAuthorisationToken()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 343165600,
+              "status": "passed"
+            },
+            "line": 80,
+            "name": "I pass body as \"PATCHUpdateBooking\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "PATCHUpdateBooking",
+                  "offset": 16
+                }
+              ],
+              "location": "CommonSteps.setBody(String,String,String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "firstname",
+                  "Dickenson"
+                ]
+              },
+              {
+                "cells": [
+                  "lastname",
+                  "Mellow"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1780237100,
+              "status": "passed"
+            },
+            "line": 83,
+            "name": "I perform PATCH operation \"PatchUpdateBooking\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "PatchUpdateBooking",
+                  "offset": 27
+                }
+              ],
+              "location": "CommonSteps.invokePATCHOperation(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1272100,
+              "status": "passed"
+            },
+            "line": 84,
+            "name": "I should get response \"200\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 23
+                }
+              ],
+              "location": "CommonSteps.verifyHTTPStatusCode(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 850700,
+              "status": "passed"
+            },
+            "line": 85,
+            "name": "response Body contains",
+            "match": {
+              "location": "CommonSteps.verifyResponseBodyValues(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "firstname"
+                ]
+              }
+            ],
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@RegressionTest"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 1897100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CommonSteps.beforeEveryScenario(Scenario)"
+            }
+          }
+        ],
+        "line": 111,
+        "name": "5)Returns a specific booking based upon the booking id provided",
+        "description": "",
+        "id": "creating-a-booking-and-fetch-all-the-ids-followed-by-partial-update-and-delete;5)returns-a-specific-booking-based-upon-the-booking-id-provided;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 798800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CommonSteps.afterEveryScenario(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3112300,
+              "status": "passed"
+            },
+            "line": 94,
+            "name": "Testing environment",
+            "match": {
+              "location": "CommonSteps.getBaseURI()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4914500,
+              "status": "passed"
+            },
+            "line": 95,
+            "name": "I pass headers",
+            "match": {
+              "location": "CommonSteps.setHeaders(String,String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Accept",
+                  "application/json"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1147300,
+              "status": "passed"
+            },
+            "line": 97,
+            "name": "I pass PathParametres",
+            "match": {
+              "location": "CommonSteps.setPathParam(String,String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "bookingId",
+                  "15"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1148305000,
+              "status": "passed"
+            },
+            "line": 99,
+            "name": "I perform GET operation \"GetBooking\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "GetBooking",
+                  "offset": 25
+                }
+              ],
+              "location": "CommonSteps.invokeGETOperation(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1104300,
+              "status": "passed"
+            },
+            "line": 100,
+            "name": "I should get response \"200\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 23
+                }
+              ],
+              "location": "CommonSteps.verifyHTTPStatusCode(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1406600,
+              "status": "passed"
+            },
+            "line": 101,
+            "name": "response content Type is json",
+            "match": {
+              "location": "CommonSteps.verifyResponseContentType()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1821700,
+              "status": "passed"
+            },
+            "line": 102,
+            "name": "response Body contains",
+            "match": {
+              "location": "CommonSteps.verifyResponseBodyValues(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "firstname"
+                ]
+              },
+              {
+                "cells": [
+                  "lastname"
+                ]
+              },
+              {
+                "cells": [
+                  "totalprice"
+                ]
+              },
+              {
+                "cells": [
+                  "depositpaid"
+                ]
+              },
+              {
+                "cells": [
+                  "additionalneeds"
+                ]
+              }
+            ],
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@RegressionTest"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 1457000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CommonSteps.beforeEveryScenario(Scenario)"
+            }
+          }
+        ],
+        "line": 112,
+        "name": "5)Returns a specific booking based upon the booking id provided",
+        "description": "",
+        "id": "creating-a-booking-and-fetch-all-the-ids-followed-by-partial-update-and-delete;5)returns-a-specific-booking-based-upon-the-booking-id-provided;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 867500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CommonSteps.afterEveryScenario(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1484400,
+              "status": "passed"
+            },
+            "line": 94,
+            "name": "Testing environment",
+            "match": {
+              "location": "CommonSteps.getBaseURI()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 7050500,
+              "status": "passed"
+            },
+            "line": 95,
+            "name": "I pass headers",
+            "match": {
+              "location": "CommonSteps.setHeaders(String,String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Accept",
+                  "application/json"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1200300,
+              "status": "passed"
+            },
+            "line": 97,
+            "name": "I pass PathParametres",
+            "match": {
+              "location": "CommonSteps.setPathParam(String,String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "bookingId",
+                  "8"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1153850700,
+              "status": "passed"
+            },
+            "line": 99,
+            "name": "I perform GET operation \"GetBooking\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "GetBooking",
+                  "offset": 25
+                }
+              ],
+              "location": "CommonSteps.invokeGETOperation(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1707400,
+              "status": "passed"
+            },
+            "line": 100,
+            "name": "I should get response \"200\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 23
+                }
+              ],
+              "location": "CommonSteps.verifyHTTPStatusCode(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2654700,
+              "status": "passed"
+            },
+            "line": 101,
+            "name": "response content Type is json",
+            "match": {
+              "location": "CommonSteps.verifyResponseContentType()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:86)\r\n\tat org.junit.Assert.assertTrue(Assert.java:41)\r\n\tat org.junit.Assert.assertTrue(Assert.java:52)\r\n\tat com.java.stepdefs.CommonSteps.verifyResponseBodyValues(CommonSteps.java:271)\r\n\tat ✽.response Body contains(file:src/test/java/resources/features/End2EndRegression.feature:102)\r\n",
+              "duration": 2124100,
+              "status": "failed"
+            },
+            "line": 102,
+            "name": "response Body contains",
+            "match": {
+              "location": "CommonSteps.verifyResponseBodyValues(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "firstname"
+                ]
+              },
+              {
+                "cells": [
+                  "lastname"
+                ]
+              },
+              {
+                "cells": [
+                  "totalprice"
+                ]
+              },
+              {
+                "cells": [
+                  "depositpaid"
+                ]
+              },
+              {
+                "cells": [
+                  "additionalneeds"
+                ]
+              }
+            ],
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@RegressionTest"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 88184300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CommonSteps.beforeEveryScenario(Scenario)"
+            }
+          }
+        ],
+        "line": 113,
+        "name": "5)Returns a specific booking based upon the booking id provided",
+        "description": "",
+        "id": "creating-a-booking-and-fetch-all-the-ids-followed-by-partial-update-and-delete;5)returns-a-specific-booking-based-upon-the-booking-id-provided;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 906000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CommonSteps.afterEveryScenario(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 5756600,
+              "status": "passed"
+            },
+            "line": 94,
+            "name": "Testing environment",
+            "match": {
+              "location": "CommonSteps.getBaseURI()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 7384900,
+              "status": "passed"
+            },
+            "line": 95,
+            "name": "I pass headers",
+            "match": {
+              "location": "CommonSteps.setHeaders(String,String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Accept",
+                  "application/json"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 962300,
+              "status": "passed"
+            },
+            "line": 97,
+            "name": "I pass PathParametres",
+            "match": {
+              "location": "CommonSteps.setPathParam(String,String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "bookingId",
+                  "10"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1720944600,
+              "status": "passed"
+            },
+            "line": 99,
+            "name": "I perform GET operation \"GetBooking\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "GetBooking",
+                  "offset": 25
+                }
+              ],
+              "location": "CommonSteps.invokeGETOperation(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2522500,
+              "status": "passed"
+            },
+            "line": 100,
+            "name": "I should get response \"200\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 23
+                }
+              ],
+              "location": "CommonSteps.verifyHTTPStatusCode(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1467100,
+              "status": "passed"
+            },
+            "line": 101,
+            "name": "response content Type is json",
+            "match": {
+              "location": "CommonSteps.verifyResponseContentType()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1249700,
+              "status": "passed"
+            },
+            "line": 102,
+            "name": "response Body contains",
+            "match": {
+              "location": "CommonSteps.verifyResponseBodyValues(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "firstname"
+                ]
+              },
+              {
+                "cells": [
+                  "lastname"
+                ]
+              },
+              {
+                "cells": [
+                  "totalprice"
+                ]
+              },
+              {
+                "cells": [
+                  "depositpaid"
+                ]
+              },
+              {
+                "cells": [
+                  "additionalneeds"
+                ]
+              }
+            ],
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@RegressionTest"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 1413300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CommonSteps.beforeEveryScenario(Scenario)"
+            }
+          }
+        ],
+        "line": 128,
+        "name": "6) Delete booking in the API",
+        "description": "",
+        "id": "creating-a-booking-and-fetch-all-the-ids-followed-by-partial-update-and-delete;6)-delete-booking-in-the-api;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 346700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CommonSteps.afterEveryScenario(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 983600,
+              "status": "passed"
+            },
+            "line": 117,
+            "name": "Testing environment",
+            "match": {
+              "location": "CommonSteps.getBaseURI()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1811800,
+              "status": "passed"
+            },
+            "line": 118,
+            "name": "I pass headers",
+            "match": {
+              "location": "CommonSteps.setHeaders(String,String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Content-Type",
+                  "application/json"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 649100,
+              "status": "passed"
+            },
+            "line": 120,
+            "name": "I pass PathParametres",
+            "match": {
+              "location": "CommonSteps.setPathParam(String,String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "bookingId",
+                  "10"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 540200,
+              "status": "passed"
+            },
+            "line": 122,
+            "name": "I set Authorisation token",
+            "match": {
+              "location": "CommonSteps.setAuthorisationToken()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1449668500,
+              "status": "passed"
+            },
+            "line": 123,
+            "name": "I perform DELETE operation \"DeleteBooking\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "DeleteBooking",
+                  "offset": 28
+                }
+              ],
+              "location": "CommonSteps.invokeDELETEOperation(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 707300,
+              "status": "passed"
+            },
+            "line": 124,
+            "name": "I should get response \"201\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "201",
+                  "offset": 23
+                }
+              ],
+              "location": "CommonSteps.verifyHTTPStatusCode(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@RegressionTest"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 1205200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CommonSteps.beforeEveryScenario(Scenario)"
+            }
+          }
+        ],
+        "line": 144,
+        "name": "7) Returns a specific booking based upon All ids",
+        "description": "",
+        "id": "creating-a-booking-and-fetch-all-the-ids-followed-by-partial-update-and-delete;7)-returns-a-specific-booking-based-upon-all-ids;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 446700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CommonSteps.afterEveryScenario(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 700000,
+              "status": "passed"
+            },
+            "line": 133,
+            "name": "Testing environment",
+            "match": {
+              "location": "CommonSteps.getBaseURI()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1118100,
+              "status": "passed"
+            },
+            "line": 134,
+            "name": "I pass headers",
+            "match": {
+              "location": "CommonSteps.setHeaders(String,String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Accept",
+                  "application/json"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1085283800,
+              "status": "passed"
+            },
+            "line": 136,
+            "name": "I perform GET operation \"GetBookingId\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "GetBookingId",
+                  "offset": 25
+                }
+              ],
+              "location": "CommonSteps.invokeGETOperation(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 798500,
+              "status": "passed"
+            },
+            "line": 137,
+            "name": "I should get response \"200\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 23
+                }
+              ],
+              "location": "CommonSteps.verifyHTTPStatusCode(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 978600,
+              "status": "passed"
+            },
+            "line": 138,
+            "name": "response content Type is json",
+            "match": {
+              "location": "CommonSteps.verifyResponseContentType()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 474100,
+              "status": "passed"
+            },
+            "line": 139,
+            "name": "response Body doesnot contains",
+            "match": {
+              "location": "CommonSteps.verifyResponseBodyDoesnotContain(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "10"
+                ]
+              }
+            ],
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@RegressionTest"
+          }
+        ]
+      }
+    ],
+    "name": "Creating a Booking and Fetch all the Ids followed by partial Update and Delete",
+    "description": "",
+    "id": "creating-a-booking-and-fetch-all-the-ids-followed-by-partial-update-and-delete",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/resources/features/End2EndRegression.feature",
+    "tags": [
+      {
+        "name": "@RegressionTest",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

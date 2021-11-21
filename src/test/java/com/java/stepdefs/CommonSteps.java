@@ -273,6 +273,25 @@ public class CommonSteps {
 		
 	}
 	
+	@And("^response Body doesnot contains$") 
+	public void verifyResponseBodyDoesnotContain(DataTable table) throws Throwable
+	{
+		List <String> list = table.asList(String.class);
+		Iterator<String> it = list.iterator();
+		body = res.getBody();
+		String bodyStringValue = body.asString();
+		while (it.hasNext())
+		{
+			String i = it.next();
+			if (bodyStringValue.contains(i))
+			{
+				log.info("Scenario failed :" +i+ "not found");
+			}
+			Assert.assertFalse(bodyStringValue.contains(i));
+		}
+		
+	}
+	
 	//Validate the HTTP status code
 	
 	@Then("^I should get response \"([^\"]*)\"$") 
