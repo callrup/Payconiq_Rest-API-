@@ -4,18 +4,9 @@ Assignemnt on Rest API testing
 
 # Author : Rupam Chatterjee
 # Project Overview
+The project is a CUCUMBER BDD frameowrk based on Rest Assured ,Maven 
 # Link to Detail Test Documentation
 # Link to Payconiq API Automation Doc
-
-The project is a maven based the major dependencies are updated in pom.xml as:
-
-Rest Assured
-
-JUnit
-
-Maven Surefire and Failsafe Plugin
-
-
 
 To Run
 Go to the project root directory.
