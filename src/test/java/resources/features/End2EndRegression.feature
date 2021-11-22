@@ -126,8 +126,8 @@ Feature: Creating a Booking and Fetch all the Ids followed by partial Update and
         
         Examples:
         | scenario                 |status| resourceName  | id   |
-        |Delete Booking for Johnny |201   |DeleteBooking  |  10  |
-        |Delete Booking for Johnny |201   |DeleteBooking  |  6   |
+        |Delete Booking for Johnny |201   |DeleteBooking  |  43  |
+        |Delete Booking for Johnny |201   |DeleteBooking  |  9   |
         |Delete Booking for Johnny |201   |DeleteBooking  |  32  |
         
          Scenario Outline: 7) Returns a specific booking based upon All ids
@@ -138,8 +138,8 @@ Feature: Creating a Booking and Fetch all the Ids followed by partial Update and
         Then I should get response "<status>" 
         And response content Type is json
         And response Body doesnot contains
-          |10|
-
+          |9 |
+          |32|
         Examples:
           |status| resourceName |
           | 200  | GetBookingId |
