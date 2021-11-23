@@ -25,6 +25,9 @@ If not please SET JAVA_HOME. For Mac users as :
  export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_301.jdk/Contents/Home/jre
  1. Run using TestRunner
 
+https://app.circleci.com/pipelines/github/callrup/Payconiq_Rest-API-
+
+
 ![image](https://user-images.githubusercontent.com/35593071/143107832-bd36ad47-172d-4124-9987-2a69ba6e669c.png)
 
 
