@@ -23,18 +23,8 @@ Java version: 1.8.0_301, vendor: Oracle Corporation, runtime: /Library/Java/Java
 If not please SET JAVA_HOME. For Mac users as :
 
  export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_301.jdk/Contents/Home/jre
-Run using maven command line as :
+ 1. Run using TestRunner
 
-1.Run only smoke test tagging done in the test class PayconiqTest
+![image](https://user-images.githubusercontent.com/35593071/143107832-bd36ad47-172d-4124-9987-2a69ba6e669c.png)
 
-mvn clean verify -Dtags="type:smoke" serenity:aggregate 
-2.Run complete test means regression using tags or if no tags are mentioned it will run regression only
 
- mvn clean verify -Dtags="type:regression" serenity:aggregate
- mvn clean verify serenity:aggregate 
-Results
-The result of the test run can be viewed under target directory in the project root folder only.
-
-Open index.html in chrome browser to view the report
-
-target/site/serenity/index.html
